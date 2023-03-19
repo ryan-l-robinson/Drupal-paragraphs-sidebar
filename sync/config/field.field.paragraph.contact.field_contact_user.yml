@@ -1,0 +1,31 @@
+uuid: 7067fbba-26d2-4417-8b14-1b8842e7407a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_contact_user
+    - paragraphs.paragraphs_type.contact
+id: paragraph.contact.field_contact_user
+field_name: field_contact_user
+entity_type: paragraph
+bundle: contact
+label: 'Contact User'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    target_bundles: null
+    sort:
+      field: name
+      direction: ASC
+    auto_create: false
+    filter:
+      type: role
+      role:
+        staff: staff
+    include_anonymous: false
+field_type: entity_reference

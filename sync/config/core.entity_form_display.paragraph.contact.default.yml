@@ -1,0 +1,40 @@
+uuid: d2b9ea01-bfb1-41e9-a072-c3b50f80a72e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.contact.field_contact_label
+    - field.field.paragraph.contact.field_contact_user
+    - paragraphs.paragraphs_type.contact
+  module:
+    - field_layout
+    - layout_discovery
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+id: paragraph.contact.default
+targetEntityType: paragraph
+bundle: contact
+mode: default
+content:
+  field_contact_label:
+    type: options_select
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_contact_user:
+    type: entity_reference_autocomplete
+    weight: 1
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

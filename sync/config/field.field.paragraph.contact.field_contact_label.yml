@@ -1,0 +1,21 @@
+uuid: 4b497a63-0bbd-4812-aa49-01d36ee1b673
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_contact_label
+    - paragraphs.paragraphs_type.contact
+  module:
+    - options
+id: paragraph.contact.field_contact_label
+field_name: field_contact_label
+entity_type: paragraph
+bundle: contact
+label: 'Contact Label'
+description: 'Label that appears above the content'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

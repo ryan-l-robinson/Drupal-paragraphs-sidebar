@@ -1,0 +1,10 @@
+uuid: 51b27d88-7c7b-4613-a615-cb9841e3c45d
+langcode: en
+status: true
+dependencies: {  }
+id: contact
+label: Contact
+icon_uuid: null
+icon_default: null
+description: 'Contact information for a node.'
+behavior_plugins: {  }

@@ -1,0 +1,33 @@
+uuid: 9f4f2cfa-db9e-40bb-915e-978f692469fc
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_contact_label
+field_name: field_contact_label
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: Primary
+      label: 'Primary Contact'
+    -
+      value: Secondary
+      label: 'Secondary Contact'
+    -
+      value: Toronto
+      label: 'Toronto Contact'
+    -
+      value: Montreal
+      label: 'Montreal Contact'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
