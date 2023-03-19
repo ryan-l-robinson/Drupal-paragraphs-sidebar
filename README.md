@@ -1,6 +1,6 @@
 ## Overview
 
-This provides a base Drupal site that can function within [GitPod](https://gitpod.io).
+This provides a base Drupal site that can function within [GitPod](https://gitpod.io), with a demonstration of how to use a block view to show contact information in the sidebar of content.
 
 ## Usage
 
@@ -22,5 +22,5 @@ Password: ZNB*ufm1tyz4rwc@yzk
 
 ## TODO
 
-- Update to Drupal 10, once there is no longer a conflict with Drupal console
-- Add XDebug for PHP testing
+- Complete the sidebar view
+- Complete the corresponding blog post
