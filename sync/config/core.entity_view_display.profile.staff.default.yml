@@ -1,0 +1,28 @@
+uuid: 87435462-3f4b-46e4-b286-f1f93fa87bd8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.profile.staff.field_email
+    - field.field.profile.staff.field_phone_number
+    - profile.type.staff
+id: profile.staff.default
+targetEntityType: profile
+bundle: staff
+mode: default
+content:
+  field_email:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_phone_number:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

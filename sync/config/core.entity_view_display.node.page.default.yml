@@ -7,7 +7,6 @@ dependencies:
     - field.field.node.page.field_contact
     - node.type.page
   module:
-    - entity_reference_revisions
     - text
     - user
 id: node.page.default
@@ -20,20 +19,12 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 101
-    region: content
-  field_contact:
-    type: entity_reference_revisions_entity_view
-    label: above
-    settings:
-      view_mode: default
-      link: ''
-    third_party_settings: {  }
-    weight: 102
+    weight: 1
     region: content
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 100
+    weight: 0
     region: content
-hidden: {  }
+hidden:
+  field_contact: true

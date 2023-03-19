@@ -1,0 +1,19 @@
+uuid: 4586e199-de09-4017-8e34-a4f541d79e94
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_email
+    - profile.type.staff
+id: profile.staff.field_email
+field_name: field_email
+entity_type: profile
+bundle: staff
+label: Email
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

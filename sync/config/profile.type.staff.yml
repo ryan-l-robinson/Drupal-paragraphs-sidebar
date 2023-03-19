@@ -1,0 +1,13 @@
+uuid: eaa1d5c0-a5d8-4a32-a994-825fa812cd06
+langcode: en
+status: true
+dependencies: {  }
+id: staff
+label: Staff
+display_label: Staff
+multiple: false
+registration: false
+roles:
+  staff: staff
+allow_revisions: false
+new_revision: false
