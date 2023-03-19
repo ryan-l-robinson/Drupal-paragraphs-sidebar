@@ -10,19 +10,7 @@ id: profile.staff.default
 targetEntityType: profile
 bundle: staff
 mode: default
-content:
-  field_email:
-    type: basic_string
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    weight: 1
-    region: content
-  field_phone_number:
-    type: basic_string
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    weight: 0
-    region: content
-hidden: {  }
+content: {  }
+hidden:
+  field_email: true
+  field_phone_number: true
