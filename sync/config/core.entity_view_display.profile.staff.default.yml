@@ -4,13 +4,22 @@ status: true
 dependencies:
   config:
     - field.field.profile.staff.field_email
+    - field.field.profile.staff.field_name
     - field.field.profile.staff.field_phone_number
     - profile.type.staff
 id: profile.staff.default
 targetEntityType: profile
 bundle: staff
 mode: default
-content: {  }
+content:
+  field_name:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
 hidden:
   field_email: true
   field_phone_number: true

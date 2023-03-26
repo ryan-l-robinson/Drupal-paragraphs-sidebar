@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.profile.staff.field_email
+    - field.field.profile.staff.field_name
     - field.field.profile.staff.field_phone_number
     - profile.type.staff
   module:
@@ -27,6 +28,14 @@ content:
     settings:
       placeholder: ''
       size: 60
+    third_party_settings: {  }
+  field_name:
+    type: string_textfield
+    weight: 28
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
   field_phone_number:
     type: telephone_default
