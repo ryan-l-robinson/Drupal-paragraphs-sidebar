@@ -1,0 +1,33 @@
+uuid: bc727768-872e-40de-965c-40b3d7d8dc91
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.sidebar_block
+  module:
+    - node
+    - views
+  theme:
+    - olivero
+id: views_block__sidebar_block_block_1
+theme: olivero
+region: sidebar
+weight: 0
+provider: null
+plugin: 'views_block:sidebar_block-block_1'
+settings:
+  id: 'views_block:sidebar_block-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: none
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      page: page
